@@ -3,7 +3,11 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_marginTop="100dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="10dp">
     <EditText
         android:id="@+id/num1"
         android:layout_width="match_parent"
@@ -24,27 +28,32 @@
 
     <Button
         android:onClick="plus"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/plus" />
+        android:text="@string/plus"
+        android:layout_gravity="center"/>
 
     <Button
         android:onClick="minus"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/minus" />
+        android:text="@string/minus"
+        android:layout_gravity="center"/>
 
     <Button
         android:onClick="multiplication"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/multiplication" />
+        android:text="@string/multiplication"
+        android:layout_gravity="center"/>
 
     <Button
         android:onClick="division"
         android:id="@+id/button4"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/division" />
+        android:text="@string/division"
+        android:layout_gravity="center"/>
+
 
 </LinearLayout>
