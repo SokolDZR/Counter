@@ -1,5 +1,6 @@
 package com.example.student2.counter_;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main);
     }
     public void plus(View v){
         EditText num1 = (EditText) this.findViewById(R.id.num1);
@@ -45,5 +46,12 @@ public class MainActivity extends AppCompatActivity {
         String snum2 = num2.getText().toString();
         TextView out = (TextView) this.findViewById(R.id.out);
         out.setText("" + (Double.parseDouble(snum1)/Double.parseDouble(snum2)));
+    }
+    public void Activity2(View view){
+        Intent intent = new Intent(this, Activity2.class);
+        EditText text1 = (EditText) this.findViewById(R.id.text);
+        intent.putExtra("mytext", text1.getText().toString());
+        startActivity(intent);
+
     }
 }
